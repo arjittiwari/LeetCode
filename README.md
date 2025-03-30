@@ -54,8 +54,13 @@ A collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0567-permutation-in-string](https://github.com/arjittiwari/LeetCode/tree/master/0567-permutation-in-string) |
+| [1534-minimum-number-of-frogs-croaking](https://github.com/arjittiwari/LeetCode/tree/master/1534-minimum-number-of-frogs-croaking) |
 ## Sliding Window
 |  |
 | ------- |
 | [0567-permutation-in-string](https://github.com/arjittiwari/LeetCode/tree/master/0567-permutation-in-string) |
+## Counting
+|  |
+| ------- |
+| [1534-minimum-number-of-frogs-croaking](https://github.com/arjittiwari/LeetCode/tree/master/1534-minimum-number-of-frogs-croaking) |
 <!---LeetCode Topics End-->
