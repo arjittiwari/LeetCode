@@ -1,7 +1,6 @@
-#define MAX_FROG 100000
 #define MAX_SOUND 5
 #define FAILURE -1
-int frogCount[MAX_FROG];
+int frogSound[MAX_SOUND];
 int count =0,freed=0;
 bool checkSound(int sound){
     if (sound==0) {
@@ -10,22 +9,22 @@ bool checkSound(int sound){
         } else {
             freed--;
         }
-        frogCount[sound]++;
+        frogSound[sound]++;
         return(true);
     } else if (sound == MAX_SOUND -1) {
-        if (frogCount[sound-1]<=0) {
+        if (frogSound[sound-1]<=0) {
             return(false);
         } else {
-            frogCount[sound-1]--;
+            frogSound[sound-1]--;
             freed++;
             return(true);
         }
     }
-    if (frogCount[sound-1]<=0) {
+    if (frogSound[sound-1]<=0) {
         return(false);
     } else {
-        frogCount[sound-1]--;
-        frogCount[sound]++;
+        frogSound[sound-1]--;
+        frogSound[sound]++;
     }
     return(true);
 }
@@ -33,7 +32,7 @@ int minNumberOfFrogs(char* croakOfFrogs) {
     int i =0,val=0;
     count=0;
     freed=0;
-    memset(frogCount,0,sizeof(int)*MAX_FROG);
+    memset(frogSound,0,sizeof(int)*MAX_SOUND);
     while (i < strlen(croakOfFrogs)) {
         switch (croakOfFrogs[i]) {
             case 'c':
@@ -61,8 +60,8 @@ int minNumberOfFrogs(char* croakOfFrogs) {
     }
     i=0;
     val=0;
-    while (i < MAX_FROG) {
-        if (frogCount[i]>0) {
+    while (i < MAX_SOUND) {
+        if (frogSound[i]>0) {
             return(FAILURE);
         }
         i++;
