@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0053-maximum-subarray](https://github.com/arjittiwari/LeetCode/tree/master/0053-maximum-subarray) |
 | [0268-missing-number](https://github.com/arjittiwari/LeetCode/tree/master/0268-missing-number) |
+| [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/arjittiwari/LeetCode/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 ## Hash Table
 |  |
 | ------- |
